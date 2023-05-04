@@ -22,18 +22,9 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*
-        * Note: Player movement may need to change so that input is UI buttons.
-        *       The game is currently using PC buttons for input
-        */
-
         // Instantiate new Vector3 with input from x (to move left/right) and y (jump) axis. 
         // No need to move character forward as platform will be moving towards the character.
         movement = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-        
-
-
-
     }
 
      //FixedUpdate is called at measured intervals. FixedUpdate used for physics functions
@@ -50,7 +41,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    // Function detects if we collide with obstacle
+    // Function detects if character collides with obstacle
     private void OnTriggerEnter(Collider other) 
     {
         Debug.Log("Collision Detected." +other.name);
