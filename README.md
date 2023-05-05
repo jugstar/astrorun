@@ -7,5 +7,5 @@ Please install Astro World.ttf first before opening the file that is located \as
 Check Adaptive Performance Package is installed
 
 
-
+=============================================
 there is no gitignore as it won't let our ui menu show. 
