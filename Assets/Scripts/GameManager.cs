@@ -20,9 +20,7 @@ public class GameManager : MonoBehaviour
         
     }
 
-    //TODO: Spawn obstacles at a certain point before it exits camera. Ensure 
-    // random distances (range between some min distance that isn't too close too each other)
-    // e.g; coord - (minDistance * rand(min, max)
+
     IEnumerator SpawnObstacles()
     {
         while (true)
