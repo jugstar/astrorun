@@ -1,42 +1,35 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
-public class GameManager : MonoBehaviour
-{
-    public GameObject obstacle; //reference to obstacle for spawning
-    private Vector3 spawnPoint;
+public class GameManager : MonoBehaviour {
 
-    
-    // Start is called before the first frame update
-    void Start()
-    {  
-        GameStart();
-    }
+    int score;
+    public static GameManager inst;
 
-    // Update is called once per frame
-    void Update()
+    [SerializeField] Text scoreText;
+
+    [SerializeField] PlayerMovement playerMovement;
+
+    public void IncrementScore ()
     {
-        
+        score++;
+        scoreText.text = "SCORE: " + score;
+        // Increase the player's speed
+        playerMovement.speed += playerMovement.speedIncreasePerPoint;
     }
 
-
-    IEnumerator SpawnObstacles()
+    private void Awake ()
     {
-        while (true)
-        {
-            // Spawn obstacles at certain times
-            float waitTime = Random.Range(0.5f, 2f);
-            yield return new WaitForSeconds(waitTime);
-            // Create random spawnpoints
-            spawnPoint = new Vector3(Random.Range(-1.5f, 2.5f), 0.5f, -0.050f);
-            Instantiate(obstacle, spawnPoint, Quaternion.identity); 
-            
-        }
+        inst = this;
     }
 
-    public void GameStart()
-    {
-        StartCoroutine("SpawnObstacles");
-    }
+    private void Start () {
+
+	}
+
+	private void Update () {
+	
+	}
 }
