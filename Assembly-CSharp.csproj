@@ -56,12 +56,19 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Obstacle.cs" />
+    <Compile Include="Assets\Scripts\Coin.cs" />
+    <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\setting.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\GameManager25.cs" />
     <Compile Include="Assets\Scripts\Test_ObstacleController.cs" />
+    <Compile Include="Assets\Scripts\GroundTile.cs" />
+    <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
     <Compile Include="Assets\Scripts\Home.cs" />
+    <Compile Include="Assets\Scripts\GroundSpawner.cs" />
     <Compile Include="Assets\Scripts\soundScript.cs" />
   </ItemGroup>
   <ItemGroup>
