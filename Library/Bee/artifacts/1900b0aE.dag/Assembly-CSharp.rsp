@@ -371,6 +371,7 @@
 "Assets/Scripts/setting.cs"
 "Assets/Scripts/soundScript.cs"
 "Assets/Scripts/Test_ObstacleController.cs"
+"Assets/Scripts/TutorialManager.cs"
 "Assets/TutorialInfo/Scripts/Readme.cs"
 -langversion:9.0
 

@@ -21,7 +21,7 @@ public class GroundSpawner : MonoBehaviour {
     {
         for (int i = 0; i < 15; i++)
         {
-            if (i < 3)
+            if (i < 6) // Changed this from if(i<3) to if(i<6) to give time for tutorial
             {
                 SpawnTile(false);
             }
